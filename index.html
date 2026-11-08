@@ -24,8 +24,8 @@
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
 
-  header { display: flex; gap: 28px; align-items: center; margin-bottom: 28px; }
-  header img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+  header { display: flex; gap: 28px; align-items: center; justify-content: space-between; margin-bottom: 28px; }
+  header img { width: 130px; height: 130px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
   h1 { font-size: 2.1rem; font-weight: 600; margin: 0 0 2px; letter-spacing: -0.01em; }
   .role { color: var(--muted); margin: 0 0 12px; line-height: 1.4; }
   .links { font-size: 0.88rem; }
@@ -71,7 +71,9 @@
   footer { margin-top: 56px; color: var(--muted); font-size: 0.82rem; line-height: 1.5; }
 
   @media (max-width: 560px) {
-    header { flex-direction: column; align-items: flex-start; gap: 16px; }
+    header { gap: 16px; }
+    header img { width: 84px; height: 84px; }
+    h1 { font-size: 1.7rem; }
     ul.compact li { flex-direction: column; gap: 0; }
   }
 </style>
@@ -80,8 +82,6 @@
 <main>
 
 <header>
-  <!-- Add a professional headshot named photo.jpg to the repo, then uncomment: -->
-  <!-- <img src="photo.jpg" alt="Gonzalo Bueno"> -->
   <div>
     <h1>Gonzalo Bueno</h1>
     <p class="role">Macroeconomic Modeling Specialist<br>Banco Central de Reserva del Perú (BCRP)</p>
@@ -93,6 +93,7 @@
       <a href="https://github.com/GonzaloBuenoB">GitHub</a>
     </div>
   </div>
+  <img src="photo.jpg" alt="Gonzalo Bueno">
 </header>
 
 <section class="intro">
