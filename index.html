@@ -29,8 +29,8 @@
       { "@type": "CollegeOrUniversity", "name": "London School of Economics and Political Science" },
       { "@type": "CollegeOrUniversity", "name": "Universidad del Pacífico" }
     ],
-    "knowsAbout": ["International macroeconomics", "Monetary policy", "Foreign exchange intervention", "Inflation", "Price setting"],
-    "sameAs": ["https://ideas.repec.org/f/pbu655.html", "https://github.com/GonzaloBuenoB"]
+    "knowsAbout": ["International macroeconomics", "Monetary economics", "Foreign exchange intervention", "Financial frictions", "Exchange rates", "Terms of trade", "Inflation", "Price setting"],
+    "sameAs": ["https://ideas.repec.org/f/pbu655.html", "https://scholar.google.com/citations?user=BzmiGzIAAAAJ", "https://github.com/GonzaloBuenoB"]
   }
 }
 </script>
@@ -89,6 +89,9 @@
   details p { margin: 8px 0 0; padding-left: 14px; border-left: 2px solid var(--rule); font-size: 0.95rem; color: var(--ink); }
   .plinks { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 0.85rem; margin-left: 14px; }
   .translation { color: var(--muted); font-size: 0.92em; }
+  .formerly { color: var(--muted); font-size: 0.88rem; font-style: italic; }
+  .coauthors { color: var(--muted); font-size: 0.95rem; }
+  ul.compact .sub { display: block; color: var(--muted); font-size: 0.92rem; line-height: 1.45; }
 
   ul.compact { list-style: none; padding: 0; margin: 12px 0 0; }
   ul.compact li { display: flex; justify-content: space-between; gap: 16px; margin-bottom: 8px; }
@@ -111,12 +114,13 @@
   <div>
     <h1>Gonzalo Bueno Bustíos</h1>
     <p class="role">Macroeconomic Modeling Specialist<br>Banco Central de Reserva del Perú (BCRP)</p>
-    <p class="role">gonzalo.bueno.b@gmail.com</p>
+    <p class="role"><a href="mailto:gonzalo.bueno.b@gmail.com">gonzalo.bueno.b@gmail.com</a> · Lima, Perú</p>
     <div class="links sans">
       <a href="cv.pdf" data-goatcounter-click="click-cv" data-goatcounter-title="CV PDF">CV</a>
       <a href="#research">Research</a>
       <a href="#tools">Tools and Data</a>
       <a href="#presentations">Presentations</a>
+      <a href="#experience">Experience</a>
       <a href="#teaching">Teaching</a>
       <a href="https://ideas.repec.org/f/pbu655.html">RePEc</a>
       <a href="https://scholar.google.com/citations?user=BzmiGzIAAAAJ">Google Scholar</a>
@@ -128,6 +132,7 @@
 
 <section class="intro">
   <p>I study international macroeconomics and monetary policy in small open economies: the financial frictions that give exchange-rate policy a role, and the nominal rigidities through which external shocks reach domestic prices. My work combines quantitative models with granular data, including the daily item-level price database I built at the central bank.</p>
+  <p><strong>Fields:</strong> International Macroeconomics, Monetary Economics.<br><strong>Topics:</strong> FX intervention and financial frictions in emerging markets, exchange-rate determination and terms of trade, price setting and inflation dynamics, high-frequency and granular data.</p>
   <p>At the BCRP I produce the macroeconomic projections and risk scenarios behind the monetary policy decision. I hold an MSc in Economics (Distinction) from the London School of Economics.</p>
 </section>
 
@@ -160,6 +165,18 @@
   <div class="status"><span class="tag">Working paper</span> 2026</div>
   <div class="coauthors">with Flavio Abanto, Guillermo Ferreyros and Youel Rojas</div>
   <p class="blurb">We ask how much the sol appreciates when Peru's terms of trade improve. Using local projections with external instruments over 2002–2025, we show that the terms-of-trade index bundles two different things: the ratio of export to import prices, and their common level. The exchange-rate response comes from the common level, not from the ratio. Most of this appreciation reflects a weaker US dollar against other commodity-exporting currencies, rather than a move of the sol against its trading partners, although a sol-specific effect remains once we control for the dollar. The answer therefore depends on why the terms of trade improve: higher export prices appreciate the sol, while lower import prices show no clear effect.</p>
+</div>
+
+<h3>Financial frictions in small open economies</h3>
+
+<div class="paper">
+  <div class="ptitle">Compressing the Dollar-Credit Discount</div>
+  <div class="status"><span class="tag">Working paper</span>2026 · with Marco Ortiz</div>
+</div>
+
+<div class="paper">
+  <div class="ptitle">Portfolio Shocks and the Financial Accelerator in a Small Open Economy</div>
+  <div class="status"><span class="tag">Working paper</span>2026 · with Marco Ortiz</div>
 </div>
 
 <h3>Price setting and inflation</h3>
@@ -248,24 +265,45 @@
 <!-- ============ PRESENTATIONS ============ -->
 <h2 id="presentations">Presentations</h2>
 <ul class="compact">
-  <li><span>12th Biennial IFC Conference, Bank for International Settlements, Basel</span><span class="when">2024</span></li>
+  <li><span>BCRP Internal Research Seminar, Lima</span><span class="when">2025, 2026</span></li>
   <li><span>Seminario de Economía, Banco Central de la República Dominicana</span><span class="when">2025</span></li>
-  <li><span>BCRP Internal Research Seminar</span><span class="when">2025, 2026</span></li>
-  <li><span>Encuentro de Economistas del BCRP, Lima</span><span class="when">2023, 2024</span></li>
+  <li><span>XLII Encuentro de Economistas del BCRP, Lima</span><span class="when">2024</span></li>
+  <li><span>12th Biennial IFC Conference, Bank for International Settlements, Basel</span><span class="when">2024</span></li>
+  <li><span>XLI Encuentro de Economistas del BCRP, Lima</span><span class="when">2023</span></li>
+</ul>
+
+<!-- ============ EXPERIENCE ============ -->
+<h2 id="experience">Experience</h2>
+<ul class="compact">
+  <li><span>Macroeconomic Modeling Specialist, Banco Central de Reserva del Perú
+    <span class="sub">Projections and risk scenarios behind the monetary policy decision (Quarterly Projection Model, DSGE core); built the first Python prototype of the forecasting pipeline. Briefing notes on the natural interest rate for BIS meetings and the Governor, boxes in the <em>Reporte de Inflación</em>, monthly GDP nowcasting. Study leave for the LSE MSc, Aug 2025 – Jul 2026.</span></span><span class="when">2024–present</span></li>
+  <li><span>Price Statistics Specialist, Banco Central de Reserva del Perú
+    <span class="sub">Built the BCRP's first daily item-level CPI; research on price setting reported to the Board.</span></span><span class="when">2021–2024</span></li>
 </ul>
 
 <!-- ============ EDUCATION & TEACHING ============ -->
 <h2>Education</h2>
 <ul class="compact">
-  <li><span>MSc Economics (Distinction), London School of Economics</span><span class="when">2026</span></li>
-  <li><span>Advanced Economics Extension Course, BCRP</span><span class="when">2021</span></li>
-  <li><span>BS Economics, Universidad del Pacífico</span><span class="when">2020</span></li>
+  <li><span>MSc Economics, Distinction, London School of Economics and Political Science
+    <span class="sub">Ranked 11/150 (top 7%). Dissertation: “Is Peru's FX Intervention Optimal? A Welfare Analysis of the 2021 Depreciation” (Distinction), supervised by Dmitry Mukhin. Funded by a BCRP study-leave scholarship.</span></span><span class="when">2026</span></li>
+  <li><span>Advanced Economics Extension Course (postgraduate level), BCRP
+    <span class="sub">Ranked 5th of 30.</span></span><span class="when">2021</span></li>
+  <li><span>BS Economics, Universidad del Pacífico
+    <span class="sub">Ranked 17th of 68. Letter of Recognition for Academic Merit from the University President.</span></span><span class="when">2020</span></li>
 </ul>
 
 <h2 id="teaching">Teaching</h2>
 <ul class="compact">
   <li><span>Teaching Assistant, Monetary Policy, BCRP Advanced Economics Extension Course</span><span class="when">2025</span></li>
   <li><span>Teaching Assistant, Universidad del Pacífico: International Macroeconomics, Macroeconomics II, Econometrics I, Mathematics III–IV, Intro to Microeconomics</span><span class="when">2018–2023</span></li>
+</ul>
+
+<h2 id="honors">Honors and Awards</h2>
+<ul class="compact">
+  <li><span>BCRP Study Leave Scholarship, MSc at LSE</span><span class="when">2025</span></li>
+  <li><span>Employee of the Year, Information and Economic Analysis Division, BCRP</span><span class="when">2022</span></li>
+  <li><span>Second Place, BCRP Innovation Award</span><span class="when">2022</span></li>
+  <li><span>Letter of Recognition for Merit, President of Universidad del Pacífico</span><span class="when">2017</span></li>
 </ul>
 
 <footer>
